@@ -381,7 +381,7 @@
                             </span>
                             <a href="tel:+4733378901">
                                 <h4 class="title">
-                                    (+94) 76 77 85 941
+                                    (+94) 76 84 44 917
                                 </h4>
                             </a>
                             <p>Call 24/7 Anytime For Your Problem</p>
@@ -403,7 +403,7 @@
                             </span>
                             <a href="mailto:yourmail@example.com">
                                 <h4 class="title">
-                                    info@techconnect.com
+                                    info@electechnician.com
                                 </h4>
                             </a>
                             <p>Mail 24/7 Anytime For Your Problem</p>

@@ -54,10 +54,11 @@
 				class="container-fluid d-flex justify-content-between align-items-center"
 			>
 				<div class="brand-logo">
-					<a href="{{ route('home-page') }}">
-						<img src="/back/vendors/images/logo.png" alt="" />
+				    <a href="{{ route('home-page') }}" data-toggle="tooltip" data-placement="bottom" title="Go Home">
+					   <img src="/back/vendors/images/logo.png" alt="" />
 					</a>
 				</div>
+				
 				<div class="login-menu">
 					<ul>
                         @if (!Route::is('admin.*'))

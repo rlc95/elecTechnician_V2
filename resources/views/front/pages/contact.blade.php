@@ -200,7 +200,7 @@
                             <div class="content">
                                 <span>Get an email</span>
                                 <a href="mailto:webmaster@example.com">
-                                    <h5 class="title under-line">info@techconnect.com</h5>
+                                    <h5 class="title under-line">info@electechnician.com</h5>
                                 </a>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                             <div class="content">
                                 <span>Make A Call</span>
                                 <a href="tel:+4733378901">
-                                    <h5 class="title">+94 76 77 85 941</h5>
+                                    <h5 class="title">+94 76 84 44 917</h5>
                                 </a>
                             </div>
                         </div>
@@ -240,7 +240,7 @@
                             <div class="content">
                                 <span>Make A Call</span>
                                 <a href="tel:+4733378901">
-                                    <h5 class="title">+94 75 713 7565</h5>
+                                    <h5 class="title">+94 75 795 2700</h5>
                                 </a>
                             </div>
                         </div>
@@ -260,7 +260,7 @@
                             <div class="content">
                                 <span>Go for location</span>
                                 <a href="https://www.google.com/maps" target="_blank">
-                                    <h5 class="title">45/3 Kandy Road, Nittambuwa</h5>
+                                    <h5 class="title">45/3 Kandy Road, Warakapola</h5>
                                 </a>
                             </div>
                         </div>

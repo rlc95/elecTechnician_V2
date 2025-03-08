@@ -11,7 +11,7 @@ Ensure you have the following installed on your system:
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/chanakanaveen/Freelance-Technicians-Marketplace
+git clone https://github.com/rlc95/elecTechnician_V2.git
 #Open the Project in VS Code.
 
 #Run XAMPP Apache and MySQL Server
@@ -40,6 +40,6 @@ DB_DATABASE='techconnect'
 # Open your Browser and Navigate to:
  http://localhost:8000
 
-Admin username : admin@mail.com
+Admin username : admin@email.com
 Admin password : 123123
 
