@@ -41,6 +41,7 @@
                     @enderror
                 </div>
             </div>
+            <input type="hidden" name="lcod" id="lcod" value="">
         </div>
 
         <div class="row justify-content-center pd-10">

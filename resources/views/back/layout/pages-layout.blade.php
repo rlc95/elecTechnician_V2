@@ -574,7 +574,7 @@
 				{{-- <div class="footer-wrap pd-20 mb-20 card-box">
 					Design By
 					<a href="#" target="_blank"
-						>Chanaka Naveen</a
+						>Rangana Lkshan</a
 					>
 				</div> --}}
 			</div>

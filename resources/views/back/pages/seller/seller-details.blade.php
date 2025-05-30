@@ -195,6 +195,14 @@
 
 <script>
 
+    $(document).ready(function () {
+        $("#cities").select2({
+            placeholder: "Select a city",
+            allowClear: true
+        });
+    });
+
+
 //update profile picture
 $('input[type="file"][name="sellerProfilePictureFile"][id="sellerProfilePictureFile"]').ijaboCropTool({
     preview : '#sellerProfilePicture',

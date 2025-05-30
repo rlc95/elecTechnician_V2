@@ -21,6 +21,7 @@ class SellerController extends Controller
 {
     //login
     public function login(Request $request){
+    
         $data = [
             'pageTitle'=>'Seller Login'
         ];

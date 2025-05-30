@@ -129,7 +129,7 @@
                                 <div class="form-group" data-select2-id="7">
                                     <label>Cities</label>
                                     <select class="custom-select2 form-control select2-hidden-accessible" name="cities" id="cities" style="width: 100%; height: 38px" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                        <option value="" selected disabled>Select a citie</option>
+                                        <option value="" selected disabled>Select a city</option>
                                         @foreach ($cities as $row )
                                             <option value="{{ $row->id }}" {{ $row->id == $client->cities ? 'selected' : '' }} >{{ $row->name_en }}</option>
                                         @endforeach

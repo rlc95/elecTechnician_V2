@@ -135,7 +135,7 @@
                                             <div class="form-group" data-select2-id="7">
                                                 <label>Cities</label>
                                                 <select class="custom-select2 form-control select2-hidden-accessible" name="cities" id="cities" style="width: 100%; height: 38px" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                                    <option value="" selected disabled>Select a citie</option>
+                                                    <option value="" selected disabled>Select a city</option>
                                                     @foreach ($cities as $row )
                                                         <option value="{{ $row->id }}" {{ $row->id == $client->cities ? 'selected' : '' }} >{{ $row->name_en }}</option>
                                                     @endforeach
@@ -250,6 +250,39 @@ $(document).ready(function(){
             console.log("name change")
             toastr.success('Profile updated successfully completed');
             // notyConfirm('success','Profile updated successfully completed')
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    //province change
+    $("#provinces").change(function(){
+        var provinceId = $(this).val();
+        var districts = @json($districts);
+        var filteredDistricts = districts.filter(function(district) {
+            return district.province_id == provinceId;
+        });
+
+        var districtSelect = $("#districts");
+        districtSelect.empty();
+        $.each(filteredDistricts, function(index, district) {
+            districtSelect.append('<option value="'+district.id+'">'+district.name_en+'</option>');
+        });
+    });
+
+    //district change
+    $("#districts").change(function(){
+        var districtId = $(this).val();
+        var cities = @json($cities);
+        var filteredCities = cities.filter(function(city) {
+            return city.district_id == districtId;
+        });
+
+        var citySelect = $("#cities");
+        citySelect.empty();
+        $.each(filteredCities, function(index, city) {
+            citySelect.append('<option value="'+city.id+'">'+city.name_en+'</option>');
         });
     });
 });

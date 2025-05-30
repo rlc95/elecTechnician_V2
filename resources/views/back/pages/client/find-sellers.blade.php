@@ -70,7 +70,7 @@ $(document).ready(function(){
        console.log('request click',slid);
         console.log('servise id', serviseid);
        $.ajax({
-            url:'{{ route('client.servise-request') }}',
+            url:"{{ route('client.servise-request') }}",
             method:"POST",
             data:{"slid":slid,"serviseid":serviseid},
             headers:{'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },

@@ -278,6 +278,7 @@ class ClientController extends Controller
         if( Auth::guard('client')->check() ){
             $client = client::findOrFail(auth()->id());
         }
+        
         $services = DB::table('services')->get();
         $servicesid = $request->service;
 
@@ -287,9 +288,14 @@ class ClientController extends Controller
                     ->leftJoin('services as f','f.id','=','a.service2')
                     ->leftJoin('services as g','g.id','=','a.service3')
                     ->where('a.status',1)
-                    // ->where('a.cities',$client->cities)
+                    ->where('a.cities',$client->cities)
+                    //->where('a.service1',$servicesid)->orWhere('a.service2',$servicesid)->orWhere('a.service3',$servicesid)
+                    ->where(function ($query) use ($servicesid) {
+                        $query->where('a.service1', $servicesid)
+                              ->orWhere('a.service2', $servicesid)
+                              ->orWhere('a.service3', $servicesid);
+                    })
                     ->get();
-        // dd($nearestseller);
 
         $data = [
             'pageTitle'=>'Find Selelrs',
